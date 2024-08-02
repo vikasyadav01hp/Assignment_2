@@ -18,10 +18,10 @@ $(document).ready(function () {
       return;
     }
 
-    if (!$('#check').is(':checked')) {
+    if (!$("#check").is(":checked")) {
       alert("Please check the terms and conditions.");
       return;
-  }
+    }
     alert("Success!");
     form.reset();
   });
