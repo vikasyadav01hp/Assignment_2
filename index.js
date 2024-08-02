@@ -9,15 +9,19 @@ $(document).ready(function () {
       alert("Email field is empty.");
       return;
     }
-    if ($('#password').val() === "" || $('#cnfpassword').val() === "") {
+    if ($("#password").val() === "" || $("#cnfpassword").val() === "") {
       alert("Please enter password.");
       return;
     }
-    if ($('#password').val() !== $('#cnfPassword').val()) {
+    if ($("#password").val() !== $("#cnfPassword").val()) {
       alert("Passwords do not match.");
-      return;  
-  }
+      return;
+    }
 
+    if (!$('#check').is(':checked')) {
+      alert("Please check the terms and conditions.");
+      return;
+  }
     alert("Success!");
     form.reset();
   });
